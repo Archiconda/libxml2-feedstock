@@ -1,15 +1,12 @@
+BUILD: aarch64-conda_cos7-linux-gnu
 VERBOSE_AT:
 - V=1
-build_number_decrement:
-- '0'
 c_compiler:
 - gcc
 channel_sources:
-- conda-forge/label/gcc7,defaults
+- archiarm,
 channel_targets:
-- conda-forge gcc7
-docker_image:
-- condaforge/linux-anvil-comp7
+- archiarm main
 icu:
 - '58'
 libiconv:
@@ -24,14 +21,8 @@ pin_run_as_build:
   zlib:
     max_pin: x.x
 target_platform:
-- linux-64
+- linux-aarch64
 xz:
 - '5.2'
-zip_keys:
-- - c_compiler
-  - channel_sources
-  - channel_targets
-  - docker_image
-  - build_number_decrement
 zlib:
 - '1.2'
